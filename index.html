@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYUKA</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <!-- GO TO TOP -->
+    <div id="toTop">
+        <img src="./img/Couteau.png" alt="totop">
+    </div>
+
+    <!-- HEADER RESPONSIVE AVEC NAVBAR CUSTOM -->
+    <!--                                      -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Myuka.</a>
+
+            <!-- Liste des sections -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a id="toSec1" class="nav-link">Code-Barre</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec2" class="nav-link">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec3" class="nav-link">Ingrédients</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec4" class="nav-link">Descriptions</a>
+                </li>
+                <li class="nav-item">
+                    <a id="toSec5" class="nav-link">Nutrition</a>
+                </li>
+            </ul>
+
+            <!-- Button type "burger" responsive -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Contenu de la page -->
+    <!--                    -->
+
+    <!-- Formulaire de scan produit -->
+    <section class="scan" id="Sec1">
+        <form class="scan">
+            <h1>Scannez votre produit</h1>
+        
+            <div class="input">
+                <label for="codeProduit">Code barre produit:</label><br>
+                <input type="text" id="codeProduit" name="codeBarre" />   
+            </div>
+            <div class="but">
+                <button type="submit" id="submit">
+                    Scanner
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Titre du produit -->
+    <section id="Sec2" class="invisible">
+        <div id="infoP" class="info"></div>
+    </section>
+
+    <!-- Image produit & ingrédients -->
+    <section id="Sec3" class="invisible">
+        <div class="imging">
+            <div id="imgP" class="imgProd"></div>
+            <div id="listIng" class="ingProd"></div>
+        </div>
+        <div id="ingred" class="anaProd"></div>
+    </section>
+
+    <!-- Section valeurs nutritionnelles et conditionnement -->
+    <section id="Sec4" class="invisible">
+        <div id="sec4N" class="flex">
+            <div id="valeurN" class="nutri"></div>
+            <div id="condiP" class="condi"></div>
+        </div>
+    </section>
+
+    <!-- Label -->
+    <section id="Sec5" class="sec3 invisible">
+        <div id="labelP" class="flex1"></div>
+    </section>
+
+    <!-- Cont1 -->
+    <section id="Sec6" class="invisible">
+        <div id="lorem1"></div>
+    </section>
+
+    <!-- Création du footer -->
+    <!--                    -->
+    <footer class="flex">
+        <div class="copyright">
+            <a href="#">Copyright@trucmuche</a>
+        </div>
+        <div class="credit">
+            <a href="#">Crédit@trucmuche</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JS CUSTOM -->
+    <script src="./js/script.js"></script>
+    <!-- SCRIPT API -->
+    <script src="./js/api.js"></script>
+</body>
+</html>
